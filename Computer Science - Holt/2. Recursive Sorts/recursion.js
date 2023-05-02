@@ -15,3 +15,13 @@ function nestedAdd(sum, array) {
   console.log('6',nestedAdd(0, [1, [2], 3]))
   console.log('5',nestedAdd(0, [[[[[[[[[5]]]]]]]]]))
   console.log('94',nestedAdd(0, [10, [12, 14, [1], [16, [20]]], 10, 11]))
+
+
+function factorial(num) {
+    if (num > 1) {
+        return num * factorial(num - 1)
+    } else 
+        return num
+}
+
+console.log(factorial(12))
