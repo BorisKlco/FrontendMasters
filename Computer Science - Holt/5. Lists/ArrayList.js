@@ -8,12 +8,15 @@ class ArrayList {
   push(value) {
     this.length++;
     this.data[this.length] = value;
+    console.log(value + " at index " + this.length);
     return value + " at index " + this.length;
     //
   }
 
   pop() {
+    console.log(this.length);
     this.length--;
+    console.log(this.data, this.length);
     //
   }
 
@@ -21,6 +24,7 @@ class ArrayList {
     if (index < 1 || index > this.length) {
       return "Out of Bounds";
     }
+    console.log(this.data[index]);
     return this.data[index];
     //
   }
@@ -33,6 +37,7 @@ class ArrayList {
     for (let x = index; x < this.length; x++) {
       this.data[x] = this.data[x + 1];
     }
+    console.log(this.data);
     return this.data;
   }
 }
